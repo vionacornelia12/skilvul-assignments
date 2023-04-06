@@ -14,6 +14,13 @@
     let myParagraph = document.getElementById("myParagraph");
     myParagraph.innerHTML = "Teks telah diubah!";
     ```
-    Menambahkan event listener pada elemen dengan ID "myParagraph".
+    Mengubah teks pada elemen dengan ID "myParagraph".
 
   - Contoh 3
+    ```js
+    let myButton = document.getElementById("myButton");
+    myButton.addEventListener("click", function() {
+        alert("Tombol diklik!");
+    });
+    ```
+    Menambahkan event listener pada elemen dengan ID "myButton".
