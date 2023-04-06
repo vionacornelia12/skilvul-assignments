@@ -61,4 +61,4 @@
     ```
     Mendapatkan elemen yang dipilih.
     Mendapatkan elemen child.
-    Mengubah teks pada elemen child
+    Mengubah teks pada elemen child.
