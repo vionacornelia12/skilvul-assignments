@@ -14,17 +14,3 @@ let myButton = document.getElementById("myButton");
 myButton.addEventListener("click", function() {
   alert("Tombol diklik!");
 });
-
-// mendapatkan elemen anak
-var childElement = document.getElementsByTagName("h3")[0];
-// mendapatkan elemen parent
-var parentElement = childElement.parentNode;
-// mengubah teks pada elemen parent
-parentElement.innerHTML = "Ini adalah teks baru.";
-
-// mendapatkan elemen yang dipilih
-var selectedElement = document.getElementsByTagName("p")[0];
-// mendapatkan elemen sibling
-var siblingElement = selectedElement.nextSibling;
-// mengubah teks pada elemen sibling
-siblingElement.innerHTML = "Ini adalah teks baru.";
