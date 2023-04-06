@@ -7,5 +7,7 @@
     const element = document.getElementById("header");
     element.style.color = "red";
     ```
+    Mengubah warna pada elemen dengan ID "header" menjadi merah.
+    
   - Contoh 2
   - Contoh 3
