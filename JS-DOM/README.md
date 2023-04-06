@@ -88,6 +88,18 @@
     Mendapatkan elemen child.
     Mengubah teks pada elemen child.
 
+  - Contoh 4
+    ```js
+    var targetElement = document.querySelector('.target');
+    var siblings = Array.from(targetElement.parentNode.childNodes)
+    .filter(node => node.nodeType === Node.ELEMENT_NODE && node !== targetElement);
+    console.log(siblings);
+    ```
+    Pada bagian ini, kode JavaScript dimulai dengan mengambil elemen dengan kelas target menggunakan metode querySelector. Kemudian, properti parentNode digunakan pada elemen tersebut untuk mengambil elemen induk atau parentnya, yaitu div dengan id="parent3".
+    Setelah itu, metode childNodes digunakan pada elemen induk tersebut untuk mengambil daftar dari semua anak elemennya, termasuk elemen target dan elemen sibling.
+    Untuk mendapatkan hanya elemen sibling yang menjadi saudara kandung dari elemen target, metode filter digunakan pada daftar elemen anak. Pada metode filter, node.nodeType === Node.ELEMENT_NODE digunakan untuk memastikan hanya elemen yang berupa node elemen yang diambil (bukan teks atau node komentar), dan node !== targetElement digunakan untuk mengecualikan elemen target itu sendiri dari daftar elemen anak.
+    Akhirnya, elemen sibling yang diambil disimpan ke dalam variabel siblings, dan daftar elemen tersebut ditampilkan pada konsol dengan menggunakan console.log.
+
 - ### Section 4
   Example of Section 4
   - Contoh 1

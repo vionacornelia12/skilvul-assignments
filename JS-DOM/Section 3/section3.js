@@ -24,3 +24,9 @@ for(var i = 0; i < childElements.length; i++) {
     childElements[i].innerHTML = "Ini adalah paragraf " + (i+1);
   }
 }
+
+var targetElement = document.querySelector('.target');
+var siblings = Array.from(targetElement.parentNode.childNodes)
+  .filter(node => node.nodeType === Node.ELEMENT_NODE && node !== targetElement);
+// siblings now contains an array of the sibling elements of the target element
+console.log(siblings);
