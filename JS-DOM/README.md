@@ -24,3 +24,41 @@
     });
     ```
     Menambahkan event listener pada elemen dengan ID "myButton".
+
+- ### Section 3
+  Example of Section 3
+  - Contoh 1
+    ```js
+    var childElement = document.getElementsByTagName("p")[0];
+    var parentElement = childElement.parentNode;
+    parentElement.innerHTML = "Ini adalah teks baru.";
+    ```
+    Mendapatkan elemen anak.
+    Mendapatkan elemen parent.
+    Mengubah teks pada elemen parent.
+
+  - Contoh 2
+    ```js
+    var myListItems = document.getElementById("myList").childNodes;
+    for(var i = 0; i < myListItems.length; i++) {
+        if (myListItems[i].nodeName == "LI") {
+            myListItems[i].innerHTML = "Item " + (i+1) + " telah diubah!";
+        }
+    }
+    ```
+    Mendapatkan elemen child berdasarkan tag name.
+    Mengubah teks pada elemen.
+
+  - Contoh 3
+    ```js
+    var selectedElement = document.getElementById("parent2");
+    var childElements = selectedElement.childNodes;
+    for(var i = 0; i < childElements.length; i++) {
+        if (childElements[i].nodeName == "P") {
+            childElements[i].innerHTML = "Ini adalah paragraf " + (i+1);
+        }
+    }
+    ```
+    Mendapatkan elemen yang dipilih.
+    Mendapatkan elemen child.
+    Mengubah teks pada elemen child
