@@ -162,6 +162,19 @@
     ```
     Menambahkan border pada gambar.
 
+  - Contoh 3
+    ```js
+    var infoDiv = document.getElementById("infoDiv");
+    var styles = window.getComputedStyle(infoDiv);
+    
+    console.log("Background color of myDiv element: " + styles.backgroundColor);
+    console.log("Width of myDiv element: " + styles.width);
+    console.log("Height of myDiv element: " + styles.height);
+    ```
+    Pada kode JavaScript di atas, document.getElementById("infoDiv") digunakan untuk memilih elemen dengan id="infoDiv" pada dokumen HTML.
+    Kemudian, window.getComputedStyle(infoDiv) digunakan untuk mendapatkan semua nilai gaya CSS terkompilasi untuk elemen tersebut, dan nilai-nilai tersebut disimpan dalam variabel styles.
+    Selanjutnya, kita menggunakan console.log() untuk menampilkan nilai dari beberapa properti CSS pada elemen infoDiv. Dalam contoh ini, kita menampilkan nilai dari properti backgroundColor, width, dan height pada konsol.
+
 - ### Section 7
   Example of Section 7
   - Contoh 1
