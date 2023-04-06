@@ -1,7 +1,7 @@
 # Challenges Class | JS-DOM
 
 - ### Section 2
-  Example of Section 2 - getElementById
+  Example of Section 2
   - Contoh 1
     ```js
     const element = document.getElementById("header");
@@ -24,6 +24,31 @@
     });
     ```
     Menambahkan event listener pada elemen dengan ID "myButton".
+
+  - Contoh 4
+    ```js
+    var tombol = document.getElementsByClassName("tombol")[0];
+    tombol.addEventListener("click", function() {
+        var mahasiswa = document.getElementsByClassName("mahasiswa");
+        for (var i = 0; i < mahasiswa.length; i++) {
+            alert(mahasiswa[i].innerText);
+        }
+    });
+    ```
+    Kode ini mengambil elemen dengan class "tombol" dan menambahkan event listener pada tombol tersebut. Ketika tombol ditekan, kode akan menampilkan isi (innerText) dari setiap elemen dengan class "mahasiswa" menggunakan loop dan alert box.
+
+  - Contoh 5
+    ```js
+    var tombol = document.querySelector("#tombol1");
+    tombol.addEventListener("click", function() {
+        var h1 = document.querySelector("#h1-awal");
+        h1.classList.add("teks-merah");
+        var p = document.querySelector("#p-awal;");
+        p.style.fontSize = "18px";
+    });
+
+    ```
+    Script JavaScript pada file "script.js" menggunakan method querySelector() untuk mendapatkan elemen h1 dan p dari dokumen HTML. Selanjutnya, kode akan menambahkan class "teks-merah" pada elemen h1 menggunakan method classList.add(), dan mengubah style font-size pada elemen p menjadi 18px menggunakan properti style.fontSize.
 
 - ### Section 3
   Example of Section 3
