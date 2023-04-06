@@ -166,3 +166,85 @@
     ```
     Menambahkan event mouseover.
     Saat menyorot mouse ke "Anda menyorot mouse ke elemen ini!", akan muncul alert "Anda menyorot mouse ke elemen ini!
+
+- ### Section 8
+  Example of Section 8
+  - Contoh 1
+    ```js
+    const maleRadio = document.getElementById("male-radio");
+    const femaleRadio = document.getElementById("female-radio");
+    
+    maleRadio.addEventListener("change", function() {
+        if (maleRadio.checked) {
+            console.log("Anda memilih jenis kelamin laki-laki");
+        }
+    });
+    
+    femaleRadio.addEventListener("change", function() {
+        if (femaleRadio.checked) {
+            console.log("Anda memilih jenis kelamin perempuan");
+            }
+        });
+    ```
+    Menambah event keydown.
+    Saat menekan "Space" pada keyboard, akan muncul alert "Anda menekan tombol spasi!".
+
+  - Contoh 2
+    ```js
+    const maleRadio = document.getElementById("male-radio");
+    const femaleRadio = document.getElementById("female-radio");
+    
+    maleRadio.addEventListener("change", function() {
+        if (maleRadio.checked) {
+            console.log("Anda memilih jenis kelamin laki-laki");
+        }
+    });
+    
+    femaleRadio.addEventListener("change", function() {
+        if (femaleRadio.checked) {
+            console.log("Anda memilih jenis kelamin perempuan");
+            }
+        });
+    ```
+    Menambah event keydown.
+    Saat menekan "Space" pada keyboard, akan muncul alert "Anda menekan tombol spasi!".
+
+ - Contoh 3
+    ```js
+    const inputField = document.getElementById('input-field');
+    const output = document.getElementById('output');
+    
+    inputField.addEventListener('input', (event) => {
+        const inputValue = event.target.value;
+        output.innerText = `You typed: ${inputValue}`;
+        output.style.display = 'block';
+    });
+    ```
+    Dalam contoh ini, kita memiliki sebuah input field dengan ID "input-field" dan sebuah elemen p dengan ID "output". Property "display" pada elemen "output" diatur awalnya ke "none" di dalam CSS, sehingga elemen tersebut tersembunyi saat halaman dimuat.
+    Kemudian kita menggunakan JavaScript untuk menambahkan event listener pada input field untuk event "input". Ketika event tersebut terpicu (misalnya ketika pengguna mengetikkan di dalam input field), kode di dalam event listener dijalankan.
+    Di dalam event listener, kita mengambil nilai dari input field menggunakan "event.target.value" dan menyimpannya ke dalam sebuah variabel bernama "inputValue". Kemudian kita menetapkan teks dari elemen "output" ke "Anda mengetikkan: " ditambah dengan nilai "inputValue". Akhirnya, kita mengatur property "display" pada elemen "output" ke "block" untuk menampilkannya di halaman.
+    Jadi ketika pengguna mengetik sesuatu di dalam input field, teks "Anda mengetikkan: [apa yang mereka ketik]" akan muncul di bawah input field.
+
+ - Contoh 4
+    ```js
+    const myInput = document.getElementById('my-input');
+    const myOutput = document.getElementById('my-output');
+    
+    myInput.addEventListener('input', (event) => {
+        const inputValue = event.target.value;
+        if (inputValue < 0) {
+            myOutput.innerText = 'Input should be at least 0';
+            myOutput.style.display = 'block';
+        } else if (inputValue > 100) {
+            myOutput.innerText = 'Input should be at most 100';
+            myOutput.style.display = 'block';
+        } else {
+            myOutput.style.display = 'none';
+        }
+    });
+    ```
+    Berikut ini contoh penggunaan event input pada input field dengan ID input-field dan elemen p dengan ID output. Input field memiliki tipe number dan atribut min dan max diatur menjadi 0 dan 100, secara berturut-turut.
+    Elemen output diatur untuk disembunyikan dengan properti display diatur menjadi none dalam CSS. Properti color diatur menjadi red untuk memberikan penekanan visual saat pesan validasi ditampilkan.
+    Kemudian kita menambahkan event listener pada input field untuk event input. Di dalam event listener, kita mengambil nilai dari input field dengan menggunakan event.target.value dan menyimpannya dalam sebuah variabel yang disebut inputValue.
+    Kita kemudian memeriksa apakah inputValue kurang dari 0 atau lebih besar dari 100. Jika iya, kita mengatur teks dari elemen output menjadi pesan validasi dan mengatur properti display dari elemen output menjadi block untuk menampilkannya di halaman. Jika tidak, jika input valid, kita menyembunyikan elemen output dengan mengatur properti display-nya menjadi none.
+    Jadi ketika pengguna mengetikkan sebuah angka ke dalam input field, pesan validasi akan muncul di bawah input field jika input kurang dari 0 atau lebih besar dari 100, dan akan disembunyikan jika inputnya valid.

@@ -19,6 +19,15 @@
     input[type="radio"] {
         margin-right: 5px;
     }
+
+    #output {
+        display: none;
+    }
+
+    #my-output {
+        display: none;
+        color: red;
+    }
 </style>
 <body>
     <h1>Example of Section 8</h1>
@@ -30,9 +39,35 @@
         <label>
           <input type="radio" name="gender" value="female" id="female-radio"> Perempuan
         </label>
-    </form>     
+    </form>
     
     <h2>Contoh 2</h2>
+    <form>
+		<label>
+			<input type="radio" name="color" value="red">
+			Merah
+		</label>
+		<label>
+			<input type="radio" name="color" value="green">
+			Hijau
+		</label>
+		<label>
+			<input type="radio" name="color" value="blue">
+			Biru
+		</label>
+		<label>
+			<input type="radio" name="color" value="yellow">
+			Kuning
+		</label>
+	</form>
+    
+    <h2>Contoh 3</h2>
+    <input type="text" id="input-field">
+    <p id="output"></p>
+
+    <h2>Contoh 4</h2>
+    <input type="number" id="my-input" min="0" max="100">
+    <p id="my-output"></p>    
 
     <script src="section8.js"></script>  
 </body>
