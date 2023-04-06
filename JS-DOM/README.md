@@ -186,8 +186,10 @@
             }
         });
     ```
-    Menambah event keydown.
-    Saat menekan "Space" pada keyboard, akan muncul alert "Anda menekan tombol spasi!".
+    Pada bagian HTML, terdapat sebuah form yang berisi dua radio button dengan atribut name="gender" dan nilai value yang berbeda-beda, yaitu "male" dan "female". Setiap radio button juga diberi atribut id untuk memudahkan pengaksesan dalam JavaScript.
+    Pada bagian JavaScript, pertama-tama kode mendapatkan elemen radio button dengan id "male-radio" dan "female-radio" dengan menggunakan method document.getElementById(). Id yang digunakan sesuai dengan atribut id yang diberikan pada radio button di HTML.
+    Setelah itu, kode menambahkan event listener untuk setiap radio button yang ada dengan menggunakan method addEventListener(). Ketika salah satu radio button dipilih, fungsi yang ditentukan akan dijalankan.
+    Dalam fungsi tersebut, kode menggunakan method checked untuk memeriksa apakah radio button yang dipilih memiliki status checked atau tidak. Jika radio button tersebut dipilih, maka kode akan menampilkan pesan sesuai dengan jenis kelamin yang dipilih menggunakan method console.log().
 
   - Contoh 2
     ```js
@@ -206,8 +208,11 @@
             }
         });
     ```
-    Menambah event keydown.
-    Saat menekan "Space" pada keyboard, akan muncul alert "Anda menekan tombol spasi!".
+    Pada bagian HTML, terdapat sebuah form yang berisi empat radio button dengan atribut name="color" dan nilai value yang berbeda-beda, yaitu "red", "green", "blue", dan "yellow".
+    Pada bagian JavaScript, pertama-tama kode mendapatkan semua elemen radio button dengan menggunakan method document.getElementsByName('color'). Nama 'color' digunakan karena atribut name pada radio button diberi nilai 'color'.
+    Setelah itu, kode menambahkan event listener untuk setiap radio button yang ada dengan menggunakan loop for. Setiap kali pemilihan radio button berubah, maka fungsi yang ditentukan akan dijalankan.
+    Dalam fungsi tersebut, kode mendapatkan nilai radio button yang dipilih dengan menggunakan method document.querySelector('input[name="color"]:checked').value. Method ini akan mencari elemen radio button yang dipilih berdasarkan atribut name dan status checked, dan mengambil nilai value-nya.
+    Terakhir, nilai yang dipilih dapat diolah sesuai kebutuhan. Pada contoh di atas, kode hanya menampilkan nilai yang dipilih pada console menggunakan method console.log(). Namun, Anda dapat mengubah kode tersebut untuk melakukan tindakan lain, misalnya menampilkan gambar dengan warna yang dipilih atau mengubah tampilan halaman.
 
  - Contoh 3
     ```js
