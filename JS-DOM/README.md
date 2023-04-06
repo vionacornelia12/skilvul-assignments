@@ -110,3 +110,17 @@
     }
     ```
     Mengubah input field menjadi tombol.
+
+- ### Section 6
+  Example of Section 6
+  - Contoh 1
+    ```js
+    document.getElementById("helloDiv").style.color = "red";
+    ```
+    Mengubah warna teks.
+
+  - Contoh 2
+    ```js
+    document.getElementById("myImage").style.border = "2px solid black";
+    ```
+    Menambahkan border pada gambar.
