@@ -67,26 +67,29 @@
   Example of Section 4
   - Contoh 1
     ```js
-    // membuat elemen baru
     var newListItem = document.createElement("li");
     var textNode = document.createTextNode("Item 4");
     newListItem.appendChild(textNode);
-    // menambahkan elemen baru ke dalam parent elemen
     document.getElementById("myList").appendChild(newListItem);
     ```
+    Membuat elemen baru.
+    Menambahkan elemen baru ke dalam parent elemen.
 
   - Contoh 2
     ```js
-    let myParagraph = document.getElementById("myParagraph");
-    myParagraph.innerHTML = "Teks telah diubah!";
+    var newImage = document.createElement("img");
+    newImage.setAttribute("src", "https://via.placeholder.com/150");
+    document.getElementById("myDiv").appendChild(newImage);
     ```
-    Mengubah teks pada elemen dengan ID "myParagraph".
+    Membuat elemen gambar baru.
+    Menambahkan elemen gambar baru ke dalam parent elemen.
 
   - Contoh 3
     ```js
-    let myButton = document.getElementById("myButton");
-    myButton.addEventListener("click", function() {
-        alert("Tombol diklik!");
-    });
+    var newButton = document.createElement("button");
+    var textNode = document.createTextNode("Klik Saya");
+    newButton.appendChild(textNode);
+    document.body.appendChild(newButton);
     ```
-    Menambahkan event listener pada elemen dengan ID "myButton".
+    Membuat elemen tombol baru.
+    Menambahkan elemen tombol baru ke dalam parent elemen.
