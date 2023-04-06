@@ -124,3 +124,45 @@
     document.getElementById("myImage").style.border = "2px solid black";
     ```
     Menambahkan border pada gambar.
+
+- ### Section 7
+  Example of Section 6
+  - Contoh 1
+    ```js
+    document.addEventListener("keydown", function(event) {
+        if (event.code === "Space") {
+            alert("Anda menekan tombol spasi!");
+        }
+    });
+    ```
+    Menambah event keydown.
+    Saat menekan "Space" pada keyboard, akan muncul alert "Anda menekan tombol spasi!".
+
+  - Contoh 2
+    ```js
+    document.addEventListener("keydown", function(event) {
+        if (event.code === "ArrowRight") {
+            document.getElementById("arrowRight").style.backgroundColor = "red";
+        }
+    });
+    ```
+    Menambahkan event keydown.
+    Saat menekan "ArrowRight" pada keyboard, backgroundColor pada id "arrowRight" akan menjadi merah.
+
+      - Contoh 3
+    ```js
+    document.getElementById("klikDiv").addEventListener("click", function() {
+        this.style.backgroundColor = "red";
+    });
+    ```
+    Menambah event click.
+    Saat klik "Klik saya!", backgroundColor pada id "arrowRight" akan menjadi merah.
+
+  - Contoh 4
+    ```js
+    document.getElementById("myDiv").addEventListener("mouseover", function() {
+        alert("Anda menyorot mouse ke elemen ini!");
+    });
+    ```
+    Menambahkan event mouseover.
+    Saat menyorot mouse ke "Anda menyorot mouse ke elemen ini!", akan muncul alert "Anda menyorot mouse ke elemen ini!
