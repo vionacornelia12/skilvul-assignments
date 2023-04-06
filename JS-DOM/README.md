@@ -126,7 +126,7 @@
     Menambahkan border pada gambar.
 
 - ### Section 7
-  Example of Section 6
+  Example of Section 7
   - Contoh 1
     ```js
     document.addEventListener("keydown", function(event) {
