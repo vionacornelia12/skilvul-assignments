@@ -93,3 +93,20 @@
     ```
     Membuat elemen tombol baru.
     Menambahkan elemen tombol baru ke dalam parent elemen.
+
+- ### Section 5
+  Example of Section 5
+  - Contoh 1
+    ```js
+    document.getElementById("myDiv").setAttribute("style", "background-color: blue; color: white;");
+    ```
+    Mengganti warna latar belakang elemen.
+
+  - Contoh 2
+    ```js
+    document.getElementById("myButton").setAttribute("value", "Hello World");
+    function myFunction() {
+        document.getElementById("myInput").setAttribute("type", "button"); 
+    }
+    ```
+    Mengubah input field menjadi tombol.
