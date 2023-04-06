@@ -62,3 +62,31 @@
     Mendapatkan elemen yang dipilih.
     Mendapatkan elemen child.
     Mengubah teks pada elemen child.
+
+- ### Section 4
+  Example of Section 4
+  - Contoh 1
+    ```js
+    // membuat elemen baru
+    var newListItem = document.createElement("li");
+    var textNode = document.createTextNode("Item 4");
+    newListItem.appendChild(textNode);
+    // menambahkan elemen baru ke dalam parent elemen
+    document.getElementById("myList").appendChild(newListItem);
+    ```
+
+  - Contoh 2
+    ```js
+    let myParagraph = document.getElementById("myParagraph");
+    myParagraph.innerHTML = "Teks telah diubah!";
+    ```
+    Mengubah teks pada elemen dengan ID "myParagraph".
+
+  - Contoh 3
+    ```js
+    let myButton = document.getElementById("myButton");
+    myButton.addEventListener("click", function() {
+        alert("Tombol diklik!");
+    });
+    ```
+    Menambahkan event listener pada elemen dengan ID "myButton".
