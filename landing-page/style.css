@@ -362,13 +362,13 @@ footer {
     font-size: 14px;
     padding: 10px 0;
     text-align: center;
-  }
+}
   
-  footer .container {
+footer .container {
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
   
-  footer p {
+footer p {
     margin: 0;
-  }
+}
