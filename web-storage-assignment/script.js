@@ -55,7 +55,7 @@ const handleResetButton = (event) => {
   addressInput.value = "";
 
   // clear localStorage
-  // localStorage.removeItem(KEY);
+  localStorage.removeItem(STORAGE_KEY);
 
   showUserData();
 };
