@@ -1,6 +1,6 @@
 const STORAGE_KEY = "user-data";
 
-const mainForm = document.querySelector(".form-utama");
+const mainForm = document.querySelector(".main-form");
 
 const firstNameInput = document.querySelector("#firstName");
 const lastNameInput = document.querySelector("#lastName");
