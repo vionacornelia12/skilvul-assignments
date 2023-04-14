@@ -69,7 +69,8 @@ textarea:focus {
 }
 
 .btn:hover {
-  background-color: #e3e3e3;
+    background-color: #e65454;
+    color: #fff;
 }
 
 .btn.primary {
@@ -81,19 +82,8 @@ textarea:focus {
   background-color: limegreen;
 }
 
-.form-footer {
-  display: flex;
-
-  justify-content: space-between;
-}
-
-#user-feedback {
-  font-size: smaller;
-
-  color: salmon;
-}
-
 .form-buttons {
   display: flex;
+  justify-content: flex-end;
   gap: 15px;
 }
