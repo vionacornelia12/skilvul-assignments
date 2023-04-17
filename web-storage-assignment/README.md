@@ -12,6 +12,7 @@ const firstNameInput = document.querySelector("#firstName");
 const lastNameInput = document.querySelector("#lastName");
 const genderInput = document.querySelector("#gender");
 const addressInput = document.querySelector("#address");
+const resetButton = document.querySelector("#reset-button");
 ```
 Mengambil element form dari DOM.
 
@@ -59,3 +60,31 @@ Fungsi untuk menangani submit form.
 mainForm.addEventListener("submit", handleSubmitForm);
 ```
 Menambahkan event listener untuk submit form.
+
+```js
+const handleResetButton = (event) => {
+    event.preventDefault();
+    
+    // clear all input
+    firstNameInput.value = "";
+    lastNameInput.value = "";
+    genderInput.value = "";
+    addressInput.value = "";
+    
+    // clear localStorage
+    localStorage.removeItem(STORAGE_KEY);
+    
+    showUserData();
+};
+```
+Menangani event click untuk tombol reset.
+
+```js
+resetButton.addEventListener("click", handleResetButton);
+```
+Menambahkan event listener untuk tombol reset.
+
+```js
+showUserData();
+```
+Inisialisasi Webpage.

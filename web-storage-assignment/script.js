@@ -5,6 +5,8 @@ const firstNameInput = document.querySelector("#firstName");
 const lastNameInput = document.querySelector("#lastName");
 const genderInput = document.querySelector("#gender");
 const addressInput = document.querySelector("#address");
+const resetButton = document.querySelector("#reset-button");
+
 
 const showUserData = () => {
   const data = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -41,8 +43,6 @@ const handleSubmitForm = (event) => {
 };
 
 mainForm.addEventListener("submit", handleSubmitForm);
-
-const resetButton = document.querySelector("#reset-button");
 
 const handleResetButton = (event) => {
   event.preventDefault();
