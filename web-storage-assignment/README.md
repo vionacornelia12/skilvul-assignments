@@ -29,3 +29,28 @@ Mengambil element form dari DOM.
     };
 ```
 Fungsi untuk menampilkan data dari localStorage.
+
+```js
+    const handleSubmitForm = (event) => {
+        event.preventDefault();
+        
+        const userData = {
+            firstName: firstNameInput.value,
+            lastName: lastNameInput.value,
+            gender: genderInput.value,
+            address: addressInput.value,
+        };
+        
+        const userDataInLocalStorage = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        
+        if (userDataInLocalStorage) {
+            const newData = [...userDataInLocalStorage, userData];
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+        } else {
+            const newData = [userData];
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+        }
+        showUserData();
+    };
+```
+Fungsi untuk menangani submit form.
