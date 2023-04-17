@@ -1,5 +1,8 @@
 # Challenge Class | Web Storage
 
+### Dokumen HTML tersebut memiliki sebuah form untuk pendataan mahasiswa yang memungkinkan pengguna untuk menginput data seperti nama depan, nama belakang, gender, dan alamat. Selain itu, terdapat tombol "Reset" dan "Save" yang digunakan untuk menghapus input dan menyimpan data pada local storage browser.
+### Script JavaScript yang terkait mengatur fungsi-fungsi untuk menyimpan dan menampilkan data pada local storage browser. Script tersebut juga memungkinkan pengguna untuk menghapus data dengan mengklik tombol "Reset".
+### Ketika data dimasukkan dan disimpan, data tersebut akan ditampilkan dalam format JSON pada elemen pre dengan id "data-localstorage". Semua fitur ini memungkinkan pengguna untuk menyimpan dan mengakses data pendataan mahasiswa secara lokal pada browser.
 ### Javascript Code Explanation
 ```js
 const STORAGE_KEY = "user-data";
