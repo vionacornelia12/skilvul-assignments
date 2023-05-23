@@ -17,26 +17,27 @@ const Layout = () => {
 
     return (
         <div>
+            <h1 className="flex gap-2 p-2" class="text-center font-bold text-2xl">What's the plan for today?</h1>
             <form className="flex gap-2 p-2" onSubmit={handleCreateTodo}>
                 <input 
                     type="text"
                     value={userInput}
                     onChange={(e) => handleSetUserInput(e.target.value)}
-                    placeholder="Enter your todo message"
+                    placeholder="What to do"
                     className="p-2 w-full border-cyan-400 border-solid border-2 rounded"
                 />
-                <input type="submit" className="btn" value="Create" />
+                <input type="submit" className="btn" value="Add" />
             </form>
             <nav >
                 <ul className="flex gap-2 p-2">
                     <li >
-                        <Link to={"/"}>All</Link>
+                        <Link to={"/"}>ALL</Link>
                     </li>
                     <li>
-                        <Link to={"/active"}>Active</Link>
+                        <Link to={"/active"}>ACTIVE</Link>
                     </li>
                     <li>
-                        <Link to={"/completed"}>Completed</Link>
+                        <Link to={"/completed"}>COMPLETED</Link>
                     </li>
                 </ul>
             </nav>
