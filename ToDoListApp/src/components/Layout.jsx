@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { actions } from '../features/todos/todosSlice';
 import { useDispatch, useSelector } from "react-redux";
 
@@ -31,13 +31,40 @@ const Layout = () => {
       <nav className="mt-4">
         <ul className="flex gap-2">
           <li>
-            <Link to={"/"} className="link-bg">ALL</Link>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+              isActive
+              ? "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-[#1AAE9F]"
+              : "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-slate-500"
+              }
+            >
+              ALL
+            </NavLink>
           </li>
           <li>
-            <Link to={"/active"} className="link-bg">ACTIVE</Link>
+            <NavLink
+              to={"/active"}
+              className={({ isActive }) =>
+              isActive
+              ? "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-[#1AAE9F]"
+              : "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-slate-500"
+              }
+            >
+              ACTIVE
+            </NavLink>
           </li>
           <li>
-            <Link to={"/completed"} className="link-bg">COMPLETED</Link>
+            <NavLink
+              to={"/completed"}
+              className={({ isActive }) =>
+              isActive
+              ? "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-[#1AAE9F]"
+              : "rounded-full text-white font-medium text-sm px-2.5 py-0.5 bg-slate-500"
+              }
+            >
+              COMPLETED
+            </NavLink>
           </li>
         </ul>
       </nav>
