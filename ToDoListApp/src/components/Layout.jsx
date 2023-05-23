@@ -31,13 +31,13 @@ const Layout = () => {
       <nav className="mt-4">
         <ul className="flex gap-2">
           <li>
-            <Link to={"/"}>ALL</Link>
+            <Link to={"/"} className="link-bg">ALL</Link>
           </li>
           <li>
-            <Link to={"/active"}>ACTIVE</Link>
+            <Link to={"/active"} className="link-bg">ACTIVE</Link>
           </li>
           <li>
-            <Link to={"/completed"}>COMPLETED</Link>
+            <Link to={"/completed"} className="link-bg">COMPLETED</Link>
           </li>
         </ul>
       </nav>

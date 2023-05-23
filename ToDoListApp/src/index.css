@@ -6,4 +6,8 @@
   .btn {
     @apply p-2 bg-blue-500 rounded hover:bg-blue-700;
   }
+  .link-bg {
+    @apply rounded-full w-fit text-white font-medium text-sm;
+    background-color: #788896;
+  }
 }
