@@ -24,9 +24,9 @@ const Layout = () => {
                     value={userInput}
                     onChange={(e) => handleSetUserInput(e.target.value)}
                     placeholder="What to do"
-                    className="p-2 w-full border-cyan-400 border-solid border-2 rounded"
+                    className="p-2 w-full border-grey border-solid border-2 rounded"
                 />
-                <input type="submit" className="btn" value="Add" />
+                <input type="submit" className="btn w-20 bg-[#6558F5] text-white font-medium" value="Add" />
             </form>
             <nav >
                 <ul className="flex gap-2 p-2">
