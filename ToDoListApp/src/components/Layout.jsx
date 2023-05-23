@@ -18,7 +18,7 @@ const Layout = () => {
   return (
     <div className="container mx-auto mt-10 px-4">
       <h1 className="text-center font-bold text-3xl mb-16">What's the plan for today?</h1>
-      <form className="flex gap-2" onSubmit={handleCreateTodo}>
+      <form className="flex gap-2 mb-12" onSubmit={handleCreateTodo}>
         <input 
           type="text"
           value={userInput}
