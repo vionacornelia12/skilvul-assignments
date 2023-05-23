@@ -17,8 +17,8 @@ const Layout = () => {
 
   return (
     <div className="container mx-auto mt-10 px-4">
-      <h1 className="text-center font-bold text-2xl">What's the plan for today?</h1>
-      <form className="flex gap-2 mt-4" onSubmit={handleCreateTodo}>
+      <h1 className="text-center font-bold text-3xl mb-16">What's the plan for today?</h1>
+      <form className="flex gap-2" onSubmit={handleCreateTodo}>
         <input 
           type="text"
           value={userInput}
@@ -26,7 +26,7 @@ const Layout = () => {
           placeholder="What to do"
           className="p-2 w-full border-gray-300 border-solid border-2 rounded"
         />
-        <input type="submit" className="btn bg-[#6558F5] text-white font-medium" value="Add" />
+        <input type="submit" className="btn bg-[#6558F5] text-white font-medium w-20" value="Add" />
       </form>
       <nav className="mt-4">
         <ul className="flex gap-2">
