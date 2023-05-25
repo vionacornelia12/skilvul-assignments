@@ -10,4 +10,11 @@
     @apply rounded-full text-white font-medium text-sm px-2.5 py-0.5;
     background-color: #788896;
   }
+  .btn-transparent {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
 }

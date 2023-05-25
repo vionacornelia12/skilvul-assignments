@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { BsFillTrashFill } from "react-icons/bs";
-import { BsFillPencilFill } from "react-icons/bs";
+import { useState, useEffect } from "react";
+import { BsFillTrashFill, BsFillPencilFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { actions } from "../features/todos/todosSlice";
 
@@ -20,9 +19,25 @@ const TodoCard = ({ todo }) => {
   };
 
   const [edit, setEdit] = useState(false);
+  const [editedContent, setEditedContent] = useState(todo.content);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSave();
+    }
+  };
+
+  const handleSave = () => {
+    handleEdit(todo.id, editedContent);
+    setEdit(false);
+  };
+
+  useEffect(() => {
+    setEditedContent(todo.content);
+  }, [todo.content]);
 
   return (
-    <div className="flex justify-between p-2 bg-slate-300 rounded mb-4 items-center">
+    <div className="flex justify-between p-2 bg-white rounded mb-4 items-center border border-gray-300">
       <div className="flex gap-1 items-center">
         <input
           type="checkbox"
@@ -38,19 +53,20 @@ const TodoCard = ({ todo }) => {
           <input
             type="text"
             name="content"
-            value={todo.content}
-            onChange={(e) => handleEdit(todo.id, e.target.value)}
+            value={editedContent}
+            onChange={(e) => setEditedContent(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
         ) : (
           <p>{todo.content}</p>
         )}
       </div>
-      <div className="flex gap-1 items-center">
-        <button className="btn" onClick={() => setEdit((value) => !value)}>
-          <BsFillPencilFill />
+      <div className="flex gap-2 items-center">
+        <button className="btn btn-transparent" onClick={() => setEdit((value) => !value)}>
+          <BsFillPencilFill style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }} />
         </button>
-        <button className="btn" onClick={() => handleRemove(todo.id)}>
-          <BsFillTrashFill />
+        <button className="btn btn-transparent" onClick={() => handleRemove(todo.id)}>
+          <BsFillTrashFill style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }} />
         </button>
       </div>
     </div>
