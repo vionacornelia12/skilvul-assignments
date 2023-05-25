@@ -56,17 +56,28 @@ const TodoCard = ({ todo }) => {
             value={editedContent}
             onChange={(e) => setEditedContent(e.target.value)}
             onKeyDown={handleKeyDown}
+            className="edit-input"
           />
         ) : (
           <p>{todo.content}</p>
         )}
       </div>
       <div className="flex gap-2 items-center">
-        <button className="btn btn-transparent" onClick={() => setEdit((value) => !value)}>
-          <BsFillPencilFill style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }} />
+        <button
+          className="btn btn-transparent"
+          onClick={() => setEdit((value) => !value)}
+        >
+          <BsFillPencilFill
+            style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }}
+          />
         </button>
-        <button className="btn btn-transparent" onClick={() => handleRemove(todo.id)}>
-          <BsFillTrashFill style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }} />
+        <button
+          className="btn btn-transparent"
+          onClick={() => handleRemove(todo.id)}
+        >
+          <BsFillTrashFill
+            style={{ color: "#4B5C6B", width: "1.2rem", height: "1.2rem" }}
+          />
         </button>
       </div>
     </div>

@@ -16,5 +16,8 @@
     padding: 0;
     cursor: pointer;
   }
+  .edit-input {
+    @apply bg-gray-300;
+  }  
   
 }
